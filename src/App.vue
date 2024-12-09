@@ -121,7 +121,7 @@ stringeeClient.on("incomingcall2", (incomingCall2) => {
 
 const onLogin = async () => {
     const res = await fetch(
-        `http://104.251.123.245:23460/?u=${username.value}`
+        `https://callapi.fayedark.com/?u=${username.value}`
     );
 
     const data = await res.json();
