@@ -121,7 +121,7 @@ stringeeClient.on("incomingcall2", (incomingCall2) => {
 
 const onLogin = async () => {
     const res = await fetch(
-        `${import.meta.env.VITE_JWT_ENDPOINT}?u=${username.value}`
+        `http://104.251.123.245:23460/?u=${username.value}`
     );
 
     const data = await res.json();
